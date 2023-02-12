@@ -9,7 +9,7 @@ const server = app.listen(8080,()=>{
 });
 
 // sending html page on live server
-app.use(express.static(path.join(__dirname, './public')));
+// app.use(express.static(path.join(__dirname, './public')));
 // console.log(path.join(__dirname, './public/index.html'));
 
 // Socket Setup
