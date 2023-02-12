@@ -1,0 +1,102 @@
+#logo{
+    display: block;
+    /* text-align: center; */
+    padding: 10px 10px;
+    font-size: 30px
+}
+body{
+    font-family:Poppins;
+    margin: 0px;
+    padding: 0px;
+    color: #3447E7;
+    background-color: #c9bfff;
+}
+#maindiv{
+    margin: auto;
+    display: block;
+/* border: 2px solid red; */
+width: 400px;
+/* margin: 10px 10px; */
+}
+#userdata{
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    
+    justify-content: center;
+}
+#container{
+    border: 2px solid rgb(41, 40, 40);
+    background-color: #e8eaff;
+    margin: auto;
+    min-height: 550px;
+    max-height: 550px;
+    max-width: 400px;
+    padding: 10px;
+    overflow-y: auto;
+
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.message{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    min-width: 10%;
+    max-width: 70%;
+    
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+}
+.message p{
+    color:gray;
+    margin-top: 0px;
+    padding: 0px 10px;
+    width: 100%;
+    overflow-wrap:break-word;
+}
+.message p:last-child{
+    font-size: 20px;
+    color: white;
+    width: 100%;
+}
+#left{
+float: left;
+clear: both;
+/* visibility:hidden */
+/* margin: 0px; */
+}
+#right{
+float:right;
+clear: both;
+/* visibility:hidden */
+}
+
+#send{
+    /* border: 1px solid rgb(218, 42, 42); */
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    min-width: 100%;
+    max-width: 100%;
+}
+#messageInp{
+    /* border: 1px solid black; */
+    height: 30px;
+    width: 85%;
+    padding: 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#sendbtn{
+    cursor: pointer;
+    font-size: 20px;
+    width:15%;
+    border:1x solid black;
+    border-radius: 0px 10px 10px 0px;
+}
+
