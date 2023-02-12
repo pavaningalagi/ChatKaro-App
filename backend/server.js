@@ -8,14 +8,12 @@ const server = app.listen(8080,()=>{
     console.log('Server is running on port 8080....');
 });
 
-app.get('/', function(req, res){
-    res.send("Welcome to ChatKao");
-});
+// app.get('/', function(req, res){
+//     res.send("Welcome to ChatKao");
+// });
 
-
-// sending html page on live server
-// app.use(express.static(path.join(__dirname, './public')));
-// console.log(path.join(__dirname, './public/index.html'));
+app.use(express.static(path.join(__dirname, '../frontend/')));
+// console.log(path.join(__dirname, '../frontend/index.html'));
 
 // Socket Setup
 const io = socket(server);
