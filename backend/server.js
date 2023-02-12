@@ -8,6 +8,9 @@ const server = app.listen(8080,()=>{
     console.log('Server is running on port 8080....');
 });
 
+app.get('/', function(req, res){
+    res.send("Welcome to ChatKao");
+}
 // sending html page on live server
 // app.use(express.static(path.join(__dirname, './public')));
 // console.log(path.join(__dirname, './public/index.html'));
