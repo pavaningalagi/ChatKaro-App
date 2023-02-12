@@ -4,7 +4,7 @@ const sendbtn = document.getElementById("sendbtn");
 const messageInp = document.getElementById("messageInp");
 const userdata = document.getElementById("userdata");
 
-const socket = io( { transports: ["websocket"] });
+const socket = io();
 
 
 let username = prompt(`Welcome to ChartKaro App! \n \n Please enter your username: `);
