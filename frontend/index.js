@@ -4,7 +4,7 @@ const sendbtn = document.getElementById("sendbtn");
 const messageInp = document.getElementById("messageInp");
 const userdata = document.getElementById("userdata");
 
-const socket = io("http://localhost:8080/", { transports: ["websocket"] });
+const socket = io();
 
 
 let username = prompt(`Welcome to ChartKaro App! \n \n Please enter your username: `);
@@ -22,7 +22,7 @@ socket.on("connect", ()=>{
         sentmsgdata.innerText = messageInp.value;
         sent_msg.append(sentmsgdata);
         container.append(sent_msg);
-        socket.emit("sentmessage", messageInp.value);
+        socket.emit("sentmessage", {name:username,data:messageInp.value});
         messageInp.value="";
     };
 
@@ -36,9 +36,9 @@ socket.on("connect", ()=>{
         recivedmsg.setAttribute("id","left");
         recivedmsg.setAttribute("class","message");
         let user = document.createElement("p");
-            user.innerText=`${username}:\n`;
+            user.innerText=`${data.name}:\n`;
         let revivedmsgdata = document.createElement("p");
-        revivedmsgdata.innerText = data;
+        revivedmsgdata.innerText = data.data;
         recivedmsg.append(user,revivedmsgdata);
         container.append(recivedmsg);
 
