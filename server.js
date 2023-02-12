@@ -12,7 +12,7 @@ const server = app.listen(8080,()=>{
 //     res.send("Welcome to ChatKao");
 // });
 
-app.use(express.static(path.join(__dirname, '../frontend/')));
+app.use(express.static(path.join(__dirname, './public')));
 // console.log(path.join(__dirname, '../frontend/index.html'));
 
 // Socket Setup
